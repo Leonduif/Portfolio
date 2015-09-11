@@ -1,0 +1,24 @@
+.about-me {
+	background: white;
+	border-top: 1px solid #DDD;
+	padding-bottom: 60px;
+	.my-info, .my-passion  {
+		margin-bottom: 100px;
+	}
+	.secondary-title {
+		margin-bottom: 60px;
+	}
+	.my-passion-list {
+		margin-bottom: 80px;
+	}
+	.my-skills-list {
+		@media (min-width: $breakpoint-md) {
+			max-width: 600px;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	.disclaimer {
+		margin-top: 20px;
+	}
+}

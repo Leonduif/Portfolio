@@ -1,0 +1,32 @@
+.my-info {
+	@extend %cf;
+	@media (min-width: $breakpoint-md) {
+		margin-bottom: 30px;
+	}
+}
+
+.my-info__img {
+	border-radius: 3px;
+	width: 80%;
+	max-width: 300px;
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 20px;
+	@media (min-width: $breakpoint-md) {
+		width: auto;
+		float: left;
+		margin-right: 20px;
+	}
+}
+
+.my-info__header {
+	@extend %cf;
+}
+
+.my-info__text {
+	padding: 0 10px;
+	p {
+		margin-bottom: 15px;
+		line-height: 1.4;
+	}
+}

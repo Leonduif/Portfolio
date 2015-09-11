@@ -1,0 +1,126 @@
+.photo-slider {
+	list-style: none;
+	overflow: hidden;
+	height: 220px;
+	position: relative;
+	@media (min-width: $breakpoint-md) {
+		&:hover {
+			.photo-slider__nav-btn {
+				display: block;
+			}
+		}
+	}
+
+	// test
+	position: relative;
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 35px;
+		background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0, 0.25));
+		z-index: 1;
+	}
+}
+
+.photo-slider__container {
+	height: 220px;
+	transition: 1s ease all;
+	list-style: none;
+	transform: translateX(0px);
+}
+
+.photo-slider__item {
+	float: left;
+	height: 220px;
+	width: 100%; // width should be calculated from .photo-slider or .work-item (same width as container)
+	background-size: cover;
+	background-position: center;
+}
+
+.photo-slider__nav {
+	position: absolute;
+	bottom: 10px;
+	transform: translateX(50%);
+}
+
+.photo-slider__nav-btn {
+	display: none;
+	float: left;
+	width: 40px;
+	height: 40px;
+	background: white;
+	cursor: pointer;
+	position: absolute;
+	border-radius: 100%;
+	top: 50%;
+	margin-top: -20px;
+	outline: 0;
+	border: 0;
+	transition: 0.3s ease all;
+	box-shadow: 0px 4px 4px -2px #888;
+}
+
+.photo-slider__nav-btn--prev {
+	left: 10px;
+	&:after {
+		content: '\e802';
+		font-family: "fontello";
+		font-size: 25px;
+		color: $color-primary;
+		font-size: 25px;
+		box-sizing: border-box;
+	}
+}
+
+.photo-slider__nav-btn--next {
+	right: 10px;
+	&:after {
+		content: '\e801';
+		font-family: "fontello";
+		color: $color-primary;
+		font-size: 25px;
+		box-sizing: border-box;
+	}
+}
+
+.photo-slider__nav-btn--inactive {
+	background: rgba(255,255,255, 0.5);
+	cursor: not-allowed;
+	box-shadow: none;
+	&:after {
+		color: black;
+	}
+}
+
+.photo-slider__bullets {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	margin-left: -28px;
+	list-style: none;
+	z-index: 2;
+}
+
+.photo-slider__bullet {
+	display: block;
+	float: left;
+	width: 8px;
+	height: 8px;
+	background: black;
+	margin: 0 3px;
+	border-radius: 100%;
+}
+
+
+.photo-slider__bullet--active {
+	background: white;
+}
+
+.photo-slider__spinner {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}

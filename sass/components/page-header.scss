@@ -1,0 +1,63 @@
+.page-header {
+	background-size: cover;
+	display: table;
+	width: 100%;
+	@media (max-width: $breakpoint-sm) {
+		background: url('../assets/img/road-yellow-small.jpg') center no-repeat;
+	}
+
+	@media (min-width: $breakpoint-sm) {
+		background: url('../assets/img/road-yellow-big.jpg') center no-repeat;
+	}
+
+	@media (min-width: $breakpoint-lg) {
+		height: 500px;
+	}
+
+	.page-sub-title {
+		margin-bottom: 30px;
+	}
+
+	.page-header__avatar {
+		margin: 0 auto;
+	}
+
+	@media (min-width: $breakpoint-md) {
+		.page-header__info {
+			display: inline-block;
+		}	
+	}
+
+	.page-title {
+		margin-bottom: 20px;
+	}
+}
+
+.page-header__inner {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 30px 10px 35px;
+	.container {
+		@media (min-width: $breakpoint-sm) {
+			text-align: center;
+		}
+	}
+}
+
+.page-header__avatar {
+	border-radius: 100%;
+	width: 100px;
+	height: 100px;
+	display: block;
+	@media (min-width: $breakpoint-md) {
+		width: 200px;
+		height: 200px;
+	}
+}
+
+.page-header__avatar-container {
+	margin: 0 auto 15px;
+	@media (min-width: $breakpoint-md) {
+		display: inline-block;
+	}
+}

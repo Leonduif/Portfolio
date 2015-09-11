@@ -1,0 +1,31 @@
+.section-title {
+	padding: 40px 0;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+}
+
+.section-title__inner {
+	display: inline-block;
+	padding: 0 10px;
+	&:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 50%;
+		margin-top: -1px;
+		height: 1px;
+		background: #DDD;
+		border-top: 1px solid white;
+		z-index: -1;
+	}
+}
+
+.section-title__inner--light {
+	background: white;
+}
+
+.section-title__inner--gray {
+	background: #EEE url('../assets/img/main-bg.png') center;
+}

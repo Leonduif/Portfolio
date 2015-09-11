@@ -1,0 +1,22 @@
+.my-work {
+	background: #EEE url('../assets/img/main-bg.png') center;
+	padding-bottom: 60px;
+	.work-item {
+		margin-bottom: 60px;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+		@media (min-width: $breakpoint-md) {
+			display: block;
+			float: left;
+			width: 48%;
+			margin-bottom: 40px;
+			&:nth-of-type(even) {
+				float: right;
+			}
+			&:nth-last-of-type(-n + 2) {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

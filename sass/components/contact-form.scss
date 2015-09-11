@@ -1,0 +1,41 @@
+.contact-form {
+	display: block;
+}
+
+.contact-form__list {
+	list-style: none;
+	@media (max-width: $breakpoint-xl) {
+		padding: 0 10px;
+	}
+	@media (min-width: $breakpoint-md) {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
+.contact-form__item {
+	margin-bottom: 25px;
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+.contact-form__label {
+	display: block;
+}
+
+.contact-form__label-text {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+.contact-form__spinner {
+	margin-left: 15px;
+}
+
+.contact-form__message {
+	display: inline-block;
+	margin-left: 10px;
+	color: #FD6B00;
+}

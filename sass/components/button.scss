@@ -1,0 +1,42 @@
+.btn {
+	display: inline-block;
+	border: none;
+	padding: 8px 12px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 3px;
+	position: relative;
+	cursor: pointer;
+	font-size: 16px;
+	transition: 0.3s ease-out width;
+	[disabled=disabled], &:disabled {
+		background: #DDD;
+		color: black;
+		margin-bottom: 3px;
+		top: 3px;
+		border-bottom: 0;
+		cursor: default;
+		&:hover {
+			background: #DDD;
+			color: black;
+		}
+	}
+}
+
+.btn--standout {
+	background: $color-primary;
+	color: #FFF;
+	border-bottom: 3px solid darken($color-primary, 20%);
+	padding: 10px 17px;
+	&:active {
+		background: darken($color-primary, 10%);
+		margin-bottom: 3px;
+		top: 3px;
+		border-bottom: 0;
+	}
+	@media (min-width: $breakpoint-sm) {
+		&:hover {
+			background: darken($color-primary, 10%);
+		}
+	}
+}

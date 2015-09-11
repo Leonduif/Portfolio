@@ -1,0 +1,9 @@
+.page-title {
+	font-family: "Lato";
+	font-weight: normal;
+	color: #FFF;
+	font-size: 32px;
+	@media (min-width: $breakpoint-md) {
+		font-size: 58px;
+	}
+}

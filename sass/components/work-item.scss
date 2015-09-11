@@ -1,0 +1,72 @@
+.work-item {
+	text-decoration: none;
+	display: block;
+	border-bottom: 1px solid #DDD;
+	background: white;
+	position: relative;
+	@media (min-width: $breakpoint-md) {
+		box-shadow: 0px 3px 8px -2px #BBB;
+		border-bottom: 0;
+		&:nth-of-type(2n + 3) {
+			clear: both;
+		}
+	}
+}
+
+.work-item__img--iens {
+	background-image: url("http://leonduif.com/img/iens-big-2.jpg");
+}
+
+.work-item__img--residence {
+	background-image: url("http://leonduif.com/img/residence-big-1.jpg");
+}
+
+.work-item__content {
+	padding: 15px;
+}
+
+.work-item__title {
+	display: inline-block;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background: #333;
+	color: #FFF;
+	padding: 5px 10px;
+	text-decoration: none;
+	font-family: "Oswald";
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 18px;
+	z-index: 2;
+	cursor: pointer;
+	transition: 0.3s ease background;
+}
+
+.work-item__info {
+	list-style: none;
+	font-size: 14px;
+	[class^="icon-"] {
+		display: table-cell;
+		vertical-align: middle;
+		width: 25px;
+	}
+}
+
+.work-item__info-item {
+	margin: 5px 0;
+}
+
+.work-item__header-text {
+	border-bottom: 1px solid #DDD;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+}
+
+.work-item__info-text {
+	display: table-cell;
+	vertical-align: middle;
+	line-height: 1.4;
+	text-decoration: none;
+	color: #222;
+}

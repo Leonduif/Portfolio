@@ -1,0 +1,57 @@
+$my-skills-list-item-height: 40px;
+
+.my-skills-list {
+	list-style: none;
+	@media (max-width: $breakpoint-md) {
+		padding: 0 10px;
+	}
+}
+
+.my-skills-list__item {
+	display: block;
+	height: $my-skills-list-item-height;
+	background: #CCC;
+	margin-bottom: 20px;
+	border-radius: 3px;
+	box-shadow: inset 0px 1px 3px #B3B3B3;
+	overflow: hidden;
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+.my-skills-list__info {
+	display: block;
+	line-height: $my-skills-list-item-height;
+	background: $color-primary;
+	border-radius: 3px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	color: white;
+	padding-left: 10px;
+	box-shadow: 2px 2px 2px #B3B3B3;
+}
+
+.my-skills-list__info--html {
+	width: 100%;
+}
+
+.my-skills-list__info--js {
+	width: 60%;
+}
+
+.my-skills-list__info--ps {
+	width: 75%;
+}
+
+.my-skills-list__info--rwd {
+	width: 100%;
+}
+
+.my-skills-list__info--ux {
+	width: 75%;
+}
+
+.my-skills-list__info--php {
+	width: 25%;
+}
